@@ -8,12 +8,8 @@ hooks:
   Afterinstall:
     - location: scripts/install_nginx.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   ApplicationStart:
     - location: scripts/start_nginx.sh
       timeout: 300
       runas: ubuntu
-
-  
-
-
